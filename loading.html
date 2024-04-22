@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+  <div class="bookshelf_wrapper">
+    <ul class="books_list">
+      <li class="book_item first"></li>
+      <li class="book_item second"></li>
+      <li class="book_item third"></li>
+      <li class="book_item fourth"></li>
+      <li class="book_item fifth"></li>
+      <li class="book_item sixth"></li>
+    </ul>
+    <div class="shelf"></div>
+  </div>
+
+  <div class="step-descriptions">
+    <div class="step-description">
+      <p class="step-text">Step 1: Generating prompt...</p>
+    </div>
+    <div class="step-description">
+      <p class="step-text">Step 2: Generating images...</p>
+    </div>
+    <div class="step-description">
+      <p class="step-text">Step 3: Generating video...</p>
+    </div>
+    <div class="step-description">
+      <p class="step-text">Step 4: Generating subtitles...</p>
+    </div>
+  </div>
+
+
+  <div id="video-wrapper" class="hidden">
+    <video id="generated-video" controls autoplay muted>
+      <!-- Video source will be added dynamically using JavaScript -->
+      Your browser does not support the video tag.
+    </video>
+    <button id="download-button" class="hidden">Download Video</button>
+  </div>
+  
+
+  <script src="loading.js"></script>
+</body>
+</html>
